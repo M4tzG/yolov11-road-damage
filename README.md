@@ -59,12 +59,7 @@ Este projeto avalia o desempenho de arquiteturas de detecção de objetos (YOLOv
 * **`test.py`**
     
     Responsável pela validação final dos modelos treinados.
-    Utiliza os pesos `best.pt` gerados em cada execução de treinamento.
-    Principais parâmetros:
-    - --weights: caminho do modelo treinado (ex: runs/yolov11m/train/weights/best.pt)
-    - --data: caminho do arquivo dataset.yaml
-    - split='test': avalia no conjunto de teste
-    
+    Utiliza os pesos `best.pt` gerados em cada execução de treinamento.  
     Retorna um relatório de métricas impresso no console para cada modelo.
 
 ## Resultados:
