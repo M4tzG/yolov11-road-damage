@@ -16,8 +16,7 @@ Este projeto avalia o desempenho de arquiteturas de detecção de objetos (YOLOv
     
     Arquivo de configuração central do projeto.
     Define parâmetros globais, como número de épocas, batch size,
-    proporção de validação/teste, classes, e modelos utilizados
-    no benchmark (yolov11n, yolov11s, yolov11m).
+    proporção de validação/teste, classes, e modelos utilizados.
     Não é executável diretamente.
 
 * **`voc2yolo.py`**
