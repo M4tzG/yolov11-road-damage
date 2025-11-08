@@ -1,7 +1,7 @@
 # ------------
 # Treinamento
 # ------------
-# listda dos modelos
+# lista dos modelos
 # usados no main.py e test.py
 MODELS_TO_TRAIN = ['yolo11n', 'yolo11s', 'yolo11m']
 

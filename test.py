@@ -32,7 +32,10 @@ def validate_model(model_name, data_yaml_path):
     end_val_time = time.time()
     total_validation_time = end_val_time - start_val_time
 
+
     print(f"\n--- Resultados teste: {model_name} ---")
+
+
 
     print("\n velocidade (médias por imagem):")
     speed_ms = metrics.speed
@@ -41,7 +44,8 @@ def validate_model(model_name, data_yaml_path):
     print(f"  Pós-processamento (NMS): {speed_ms['postprocess']:.2f} ms")
     print(f"  Tempo TOTAL da operação 'model.val()': {total_validation_time:.2f} s")
 
-    # performance
+
+
     print("\n metricas (Geral):")
     print(f"  Precisão (P): {metrics.box.p.mean():.4f}")
     print(f"  Recall (R):   {metrics.box.r.mean():.4f}")
@@ -49,7 +53,8 @@ def validate_model(model_name, data_yaml_path):
     print(f"  mAP50-95: {metrics.box.map:.4f}")
     print(f"  mAP50:    {metrics.box.map50:.4f}")
 
-    # F1-classes
+
+
     print("\n--- F1-Score por Classe ---")
     class_names = model.names
     for i, f1 in enumerate(metrics.box.f1):

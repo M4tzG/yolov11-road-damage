@@ -2,7 +2,7 @@ import glob
 import os
 import yaml
 
-from config import output_folder, original_classes, classes as new_classes
+from config import output_folder, classes as new_classes
 
 
 LABELS_DIR = os.path.join(output_folder, "labels")

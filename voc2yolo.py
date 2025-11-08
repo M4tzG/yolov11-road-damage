@@ -73,7 +73,7 @@ def process_files(folder, file_list, split, target_class=None):
             for obj in objs:
                 cls = obj.find("name").text
 
-                # Lida com classes não esperadas
+                # classes não esperadas
                 if cls not in original_classes:
                     print(f"Aviso: Classe '{cls}' em {xml_file} não está em 'original_classes'. Pulando objeto.")
                     continue

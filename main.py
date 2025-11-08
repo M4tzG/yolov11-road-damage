@@ -22,7 +22,7 @@ def train_model(model, data_yaml, base_save_dir, experiment_name, device):
     Função para treinar um modelo YOLO.
     
     Args:
-        model (YOLO): O objeto modelo YOLO pré-carregado (ex: YOLO('yolo11n.pt')).
+        model (YOLO): Modelo YOLO (ex: YOLO('yolo11n.pt')).
         data_yaml (str): Caminho para o arquivo dataset.yaml.
         base_save_dir (str): A pasta base para todos os 'runs' (ex: './runs').
         experiment_name (str): O nome desta execução (ex: 'yolo11n').
@@ -88,13 +88,7 @@ if __name__ == '__main__':
 
     else:
         for model_name in MODELS_TO_TRAIN:
-            model_pt_file = f'{model_name}.pt'
-            
-
-            if not os.path.exists(model_pt_file):
-                print(f"Aviso: Arquivo de pesos '{model_pt_file}' não encontrado. Pulando {model_name}.")
-                continue
-
+            model_pt_file = f'models/{model_name}.pt'
 
             print(f"\n==================================================")
             print(f"Carregando modelo: {model_pt_file}")
